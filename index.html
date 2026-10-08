@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundClick</title>
+    <link rel="shortcut icon" href="assets/caixa-de-som.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+       <h1>🎵 SoundClick</h1> 
+    </header>
+
+    <section id="inicio">
+        <h2>Escolha um tema</h2>
+        <button onclick="abrirMemes()">😂 Memes</button>
+        <button onclick="abrirAnimais()">🐶 Animais</button>
+        <button onclick="abrirJogos()">🎮 Jogos Retrô</button>
+    </section>
+
+    <section id="memes">
+
+        <button onclick="voltar()">Voltar</button>
+        <h2>😂 Sons de Memes</h2>
+
+        <img id="imagemMemes" src="./assets/Trollface.png">
+
+        <div class="teclado">
+
+            <button class="tecla"
+                onclick="tocarSom('gokuDrip', 'imagemMemes', './assets/goku-drip.jpg')">
+                Goku Drip
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('faaah', 'imagemMemes', './assets/faaah!.jpg')">
+                Faaah
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('gritoOnca', 'imagemMemes', './assets/matador-de-onça.jpg')">
+                Grito da Onça
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('maisDe8000', 'imagemMemes', './assets/mais-de-8000.jpg')">
+                Mais de 8000
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('romance', 'imagemMemes', './assets/romance.jpg')">
+                Romance
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('xandao', 'imagemMemes', './assets/xandao.jpg')">
+                Xandão
+            </button>
+
+        </div>
+
+    </section>
+
+    <section id="animais">
+
+        <button onclick="voltar()">Voltar</button>
+
+        <h2>🐶 Sons de Animais</h2>
+
+        <img id="imagemAnimais" src="./assets/animal.jpg">
+
+        <div class="teclado">
+
+            <button class="tecla"
+                onclick="tocarSom('cachorro', 'imagemAnimais', './assets/cachorro.jpg')">
+                Cachorro
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('gato', 'imagemAnimais', './assets/gato.jpg')">
+                Gato
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('passaro', 'imagemAnimais', './assets/passaros.jpg')">
+                Pássaro
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('cavalo', 'imagemAnimais', './assets/cavalo.jpg')">
+                Cavalo
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('cabra', 'imagemAnimais', './assets/cabra.jpg')">
+                Cabra
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('vaca', 'imagemAnimais', './assets/vaca.jpg')">
+                Vaca
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section id="jogos">
+
+        <button onclick="voltar()">Voltar</button>
+
+        <h2>🎮 Jogos Retrô</h2>
+
+        <img id="imagemJogos" src="./assets/arcade.jpg">
+
+        <div class="teclado">
+
+            <button class="tecla"
+                onclick="tocarSom('corrida', 'imagemJogos', './assets/corrida.jpg')">
+                Corrida
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('pulo', 'imagemJogos', './assets/mario_jump.jpg')">
+                Pulo
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('gameover', 'imagemJogos', './assets/game-over.jpg')">
+                Game Over
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('powerup', 'imagemJogos', './assets/powerUp.jpg')">
+                Power Up
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('tiroRetro', 'imagemJogos', './assets/laser.jpg')">
+                Laser
+            </button>
+
+            <button class="tecla"
+                onclick="tocarSom('explosao', 'imagemJogos', './assets/explosao.jpg')">
+                Explosão
+            </button>
+
+        </div>
+
+    </section>
+
+    <audio src="./assets/audios/goku-drip.mp3"
+        id="som_gokuDrip"></audio>
+
+    <audio src="./assets/audios/faah.mp3"
+        id="som_faaah"></audio>
+
+    <audio src="./assets/audios/grito-da-onca.mp3"
+        id="som_gritoOnca"></audio>
+
+    <audio src="./assets/audios/maisDe8000.mp3"
+        id="som_maisDe8000"></audio>
+
+    <audio src="./assets/audios/romance.mp3"
+        id="som_romance"></audio>
+
+    <audio src="./assets/audios/xandao.mp3"
+        id="som_xandao"></audio>
+
+
+    <audio src="./assets/audios/cachorro.mp3"
+        id="som_cachorro"></audio>
+
+    <audio src="./assets/audios/gato.mp3"
+        id="som_gato"></audio>
+
+    <audio src="./assets/audios/passaros.mp3"
+        id="som_passaro"></audio>
+
+    <audio src="./assets/audios/cavalo.mp3"
+        id="som_cavalo"></audio>
+
+    <audio src="./assets/audios/cabra.mp3"
+        id="som_cabra"></audio>
+
+    <audio src="./assets/audios/vaca.mp3"
+        id="som_vaca"></audio>
+
+
+    <audio src="./assets/audios/corrida.mp3"
+        id="som_corrida"></audio>
+
+    <audio src="./assets/audios/pulo.mp3"
+        id="som_pulo"></audio>
+
+    <audio src="./assets/audios/gameOver.mp3"
+        id="som_gameover"></audio>
+
+    <audio src="./assets/audios/power-up.mp3"
+        id="som_powerup"></audio>
+
+    <audio src="./assets/audios/laser.mp3"
+        id="som_tiroRetro"></audio>
+
+    <audio src="./assets/audios/explosão.mp3"
+        id="som_explosao"></audio>
+
+
+    <script src="./scripts/app.js"></script>
+
+</body>
+</html>
